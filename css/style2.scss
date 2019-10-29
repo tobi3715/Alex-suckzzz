@@ -1,0 +1,26 @@
+@function colorz ($color-name, $color-variant) {
+    @return map-get(map-get($color, $color-name), $color-variant);
+}
+
+$color: (
+    primary: (
+    base: #444499,
+    dark: darken(#444499, 20%),
+    light: lighten(#444499, 20%)
+ ),
+
+    secondary: (
+    base: #449944,
+    dark: darken(#449944, 20%),
+    light: lighten(#449944, 20%)
+ )
+);
+
+h1 {
+    color: colorz(secondary, light);
+}
+
+h3 {
+    color: colorz(primary, base);
+}
+
