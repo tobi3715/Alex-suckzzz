@@ -16,5 +16,19 @@ body {
 #Alex {
     width: 50%;
     height: 100vh;
-    background-color: blue;
+    background-color: #fefefe;
+    $color: (
+        primary: (
+            base: #444499,
+            dark: darken( #444499, 20%),
+            light: lighten( #444499, 20%),
+        ),
+        secondary: (
+            base: #4a095a,
+            dark: darken( #4a095a, 20%),
+            light: lighten( #4a095a, 20%),
+        ),
+
+    )
+
 }
