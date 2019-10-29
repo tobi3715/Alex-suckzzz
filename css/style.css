@@ -1,0 +1,7 @@
+h1 {
+    font-size: 7em;
+    color: green;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
